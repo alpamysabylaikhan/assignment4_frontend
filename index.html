@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment #4 — Responsive Web Design</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo.png" alt="Logo" class="me-2 rounded" />
+          <span class="brand-text">MiHoYo's Portfolio</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5" id="home">
+
+    <!--Task 0-->
+    <section class="mb-5">
+      <div class="card p-3">
+        <h1 class="resp-h1">MiHoYo</h1>
+        <h2 class="resp-h2">Chinese video game publishing company</h2>
+        <p class="resp-par">
+          The company is best known for developing the Honkai franchise, Tears of Themis, Genshin Impact, and Zenless Zone Zero. 
+          In addition to games, MiHoYo has created various products such as animated series, novels, comics, music, and merchandise.
+        </p>
+      </div>
+    </section>
+
+    <!--Task 1-->
+    <section class="mb-5">
+      <h2 class="section-title">Task 1</h2>
+
+      <div class="mq-layout">
+        <div class="mq-box">Genshin Impact</div>
+        <div class="mq-box">Honkai Star Rail</div>
+        <div class="mq-box">Zenless Zone Zero</div>
+      </div>
+    </section>
+
+    <!--Task 2-->
+    <section class="mb-5" id="projects">
+      <h2 class="section-title">Task 2</h2>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="card-title">History</h5>
+            <p class="card-text">2011-2012: MiHoYo began with three computer science students from Shanghai Jiao Tong University who shared an interest in technology 
+            and ACG (anime, comics, and games) culture: Cai Haoyu, Liu Wei, and Luo Yuhao (罗宇皓). Before establishing the MiHoYo name, the three have worked on projects
+            together. Their first project was an open-source literature community which won them scholarships worth CNY 200,000 at a competition. </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="card-title">Etymology</h5>
+            <p class="card-text">The letters "H" and "Y" in MiHoYo's name come from the names of 2 of 3 founders, Cai Haoyu and Luo Yuhao, and the letter "O" was added 
+            based on the fact that names of famous companies such as Facebook, Google and Microsoft contain that letter. Due to "HoYo" already being registered, "mi" 
+            named from the VOCALOID software Hatsune Miku was prepended to the name. Hatsune Miku was picked because of her popularity among otaku.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="card-title">Company activities</h5>
+            <p class="card-text">In September 2020, MiHoYo established strategic cooperation with Zhangjiajie to promote cultural tourism in the city with the help of 
+            Genshin Impact. The topography of Zhangjiajie's karst landscapes inspired the level designs of Jueyun Karst and Mt. Tianheng. After the agreement, two 
+            life-size Teleport Waypoints were installed at the Zhangjiajie National Forest Park and Huangshi Village (黄石寨). Next, MiHoYo cooperated with Huanglong 
+            for ecological environment protection. Huanglong's multicolored pools served as the inspiration for the level design of Luhua Pool in Liyue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Task 4-->
+    <section class="mb-5" id="about">
+      <h2 class="section-title">Task 4</h2>
+
+      <div class="row gy-4">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="mb-0">MiHoYo's Projects</h3>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="card project-card h-100">
+                <img src="genshin.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Genshin Impact</h5>
+                  <p class="card-text">An open-world action RPG developed and published by HoYoverse for the PC, iOS/Android, PS4/PS5, and Xbox Series X|S platforms.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card project-card h-100">
+                <img src="hsr.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Honkai Star Rail</h5>
+                  <p class="card-text">Honkai: Star Rail is a turn-based space fantasy RPG developed and published by HoYoverse for PC, PS5, and iOS/Android platforms.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card project-card h-100">
+                <img src="HonkaiImpact3rd.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Honkai Impact 3rd</h5>
+                  <p class="card-text">Honkai Impact 3rd is a 2016 free-to-play 3D science fantasy action role-playing game developed and published by miHoYo.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card project-card h-100">
+                <img src="Zenless_Zone_Zero.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                  <h5 class="card-title">Zenless Zone Zero</h5>
+                  <p class="card-text">Zenless Zone Zero is a free-to-play action RPG developed and published by HoYoverse. It was released for Windows, PlayStation 5, 
+                    iOS, and Android on July 4th.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Right sidebar-->
+        <aside class="col-12 col-lg-4" id="contact">
+          <div class="card p-3 mb-3">
+            <h5>About Us</h5>
+            <p class="small text-muted">MiHoYo inspires millions worldwide by blending art, music, and technology into unforgettable gaming adventures.</p>
+
+            <ul class="list-unstyled small">
+              <li><strong>Email:</strong> <a href="mailto:info@mihoyo.com">info@mihoyo.com</a></li>
+              <li><strong>Phone:</strong> +86 21 1234 5678</li>
+              <li><strong>Location:</strong> Shanghai, China</li>
+            </ul>
+          </div>
+
+          <div class="card p-3">
+            <h6>Skills</h6>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-secondary">Game Development & Publishing</span>
+              <span class="badge bg-secondary">Anime-Inspired Art Style</span>
+              <span class="badge bg-secondary">Storytelling & Worldbuilding</span>
+              <span class="badge bg-secondary">Advanced Graphics & Animation</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-3 mt-auto">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>© 2025 | Alpamys Abylaikhan | All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!--Bootstrap JS Bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
